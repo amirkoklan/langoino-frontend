@@ -1,30 +1,101 @@
-.navbar-inverse{
+body {
+    font-family: 'Open Sans', sans-serif;
+    min-width: 425px;
+}
+.navbar-inverse {
     background-color: #5e7eb6;
     border-color: #5e7eb6;
 }
-
+.header-right ul {
+    list-style-type: none;
+}
+.navbar-brand {
+    height: 50px;
+    width: 165px;
+    background-image: url(http://langoino.com/cms_module/germanquiz/css/img/logo.svg);
+    background-repeat: no-repeat;
+    background-size: 210px 68px;
+    background-position: -45px -10px;
+}
 .header a {
-    color: white;
+    color: #fff;
 }
 .footer a {
-    color: white;
+    color: #aebedb;
 }
 .navbar-inverse .navbar-nav>li>a {
-    color: white;
+    color: #fff;
 }
-.content{
+.content {
     height: 200px;
 }
-.footer{
-    background-color: rgb(29,91,140);
+.footer {
+    background-color: #385a8b;
+    padding: 30px 0px;
 }
-/*
-.header-right {
-    position: absolute;
-    top: 0px;
-    right: 0px;
+.footer h4 {
+    color:#fff;
+    font-size: 12px;
 }
-.navbar-toggle {
-    margin-top: 50px;
+.footer ul {
+    list-style-type: none;
+    padding-left: 0px;
 }
-*/
+.registration {
+    float: right;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.registration>ul>li a {
+    margin: 0px 10px 0px 10px;
+    color: #fff;
+}
+.registration>ul>li:first-child:after {
+    content: '|';
+    color: white;
+    font-size: 26px;
+    line-height: 40px;
+}
+.registration>ul>li:first-child a {
+    float: left;
+}
+.registration>ul>li>a {
+    padding: 5px 15px;
+    border: 2px solid #aebedb;
+    border-radius: 30px;
+    font-size: 12px;
+    margin-top: 6px;
+}
+.footer-logo {
+
+}
+.navbar-inverse .navbar-nav>li>a:hover {
+    background-color: #99aad3;
+}
+@media (max-width: 767px){
+    .registration {
+        float: left;
+    }
+    .registration>ul>li:first-child:after {
+        display: none;
+    }
+    .registration>ul>li:first-child a {
+        float: none;
+    }
+}
+@media (max-width: 992px) and (min-width: 768px) {
+    .registration {
+        float: left;
+        margin-left: -25px;
+    }
+}
+@media (min-width: 768px){
+    .registration>ul>li a {
+        line-height: 20px;
+        position: relative;
+        display: block;
+    }
+    .registration li {
+        float: left;
+    }
+}
