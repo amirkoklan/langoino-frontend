@@ -90,12 +90,10 @@ body {
     color: #4E4E55;
 }
 .question:after {
-    content: "\2014\2014\2014";
+    content: "_____";
     display: block;
-    height: 2px;
-    overflow: hidden;
-    line-height: 1px;
-    margin-top: 25px;
+    margin-top: 10px;
+    color: #B8B8BE;
 }
 .question-description {
     font-size: 12px;
